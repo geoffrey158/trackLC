@@ -1,4 +1,4 @@
-# Last updated: 11/28/2025, 11:25:18 PM
+# Last updated: 3/30/2026, 4:26:01 AM
 1class Solution:
 2    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
 3        #Step 1: defaultdict to store lists of anagrams based on their sorted representation
@@ -13,7 +13,7 @@
 12
 13            # Count how many times each letter appears in the word
 14            for c in word:
-15                # ord(ch) - ord('a') gives an index between 0 and 25
+15                # ord(c) - ord('a') gives an index between 0 and 25
 16                count[ord(c) - ord('a')] += 1
 17
 18            # Convert the list to a tuple (since lists can't be dictionary keys)
